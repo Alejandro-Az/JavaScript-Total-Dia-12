@@ -37,25 +37,25 @@ por lo tanto debe vigilar al evento keydown, evitando que las demás teclas (nú
 	
  7. Ahora, la función que va a realizar la búsqueda deberá:
 		
-  1. Obtener los datos del archivo JSON con cualquiera de las técnicas que has aprendido. 
+* Obtener los datos del archivo JSON con cualquiera de las técnicas que has aprendido. 
 		
-  2. Con los datos obtenidos, debemos recorrer el array y verificar si coincide el nombre de cada elemento con nuestra búsqueda. 
-Recuerda que las coincidencias pueden ser totales (si el usuario escribió el titulo completo) o parciales 
-(si el usuario escribió el comienzo del título). Para chequear esto último puedes usar el método startsWith() 
-de los strings, qué básicamente en inglés significa "Comienza con". Además para evitar confusiones con el uso de mayúsculas y minúsculas, 
-hemos escrito los títulos del archivo JSON con mayúsculas, y tu código puede pasar el string ingresado por el usuario a mayúsculas 
-con el método toUpperCase() antes de ejecutar la búsqueda.
+* Con los datos obtenidos, debemos recorrer el array y verificar si coincide el nombre de cada elemento con nuestra búsqueda. 
+	Recuerda que las coincidencias pueden ser totales (si el usuario escribió el titulo completo) o parciales 
+	(si el usuario escribió el comienzo del título). Para chequear esto último puedes usar el método startsWith() 
+	de los strings, qué básicamente en inglés significa "Comienza con". Además para evitar confusiones con el uso de mayúsculas y minúsculas, 
+	hemos escrito los títulos del archivo JSON con mayúsculas, y tu código puede pasar el string ingresado por el usuario a mayúsculas 
+	con el método toUpperCase() antes de ejecutar la búsqueda.
 		
-  3. En cada vuelta del ciclo, donde iteraremos uno a uno por todos los items del JSON, debemos verificar que la propiedad "nombre" 
-de los datos del JSON coincida con parte del contenido del input donde el usuario ingresara un string a buscar. 
+* En cada vuelta del ciclo, donde iteraremos uno a uno por todos los items del JSON, debemos verificar que la propiedad "nombre" 
+	de los datos del JSON coincida con parte del contenido del input donde el usuario ingresara un string a buscar. 
+
+* Si hay coincidencia, debemos crear una etiqueta <p> donde almacenaremos la sinopsis del elemento y 
+	luego una etiqueta <li> donde almacenaremos el nombre. La etiqueta <p> se adjuntará al elemento <li>, 
+	mientras que este ultimo se adjuntará al elemento <ul> que ya hemos definido en nuestro HTML.
 		
-  4. Si hay coincidencia, debemos crear una etiqueta <p> donde almacenaremos la sinopsis del elemento y 
-luego una etiqueta <li> donde almacenaremos el nombre. La etiqueta <p> se adjuntará al elemento <li>, 
-mientras que este ultimo se adjuntará al elemento <ul> que ya hemos definido en nuestro HTML.
-		
-  5. Por último, la frutilla del postre, vamos a declarar dos eventos para el elemento <li>. 
-Serán los eventos mouseover y mouseout para lograr que la sinopsis solo sea visible cuando el usuario posiciones 
-el mouse sobre el título encontrado, y que deje de ser visible cuando el mouse se retira.
+* Por último, la frutilla del postre, vamos a declarar dos eventos para el elemento <li>. 
+	Serán los eventos mouseover y mouseout para lograr que la sinopsis solo sea visible cuando el usuario posiciones 
+	el mouse sobre el título encontrado, y que deje de ser visible cuando el mouse se retira.
 
 ### Pantallas de la aplicación
 
