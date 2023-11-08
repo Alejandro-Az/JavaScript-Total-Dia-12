@@ -33,7 +33,7 @@ por lo tanto debe vigilar al evento keydown, evitando que las demás teclas (nú
 	
  5. El botón debe vigilar el evento click, que es el encargado de iniciar la búsqueda.
 	
- 6. Para mostrar la lista, como te dije, tu página HTML debe tener preparada una etiqueta <ul> donde mostraremos el resultado de la búsqueda.
+ 6. Para mostrar la lista, como te dije, tu página HTML debe tener preparada una etiqueta ul donde mostraremos el resultado de la búsqueda.
 	
  7. Ahora, la función que va a realizar la búsqueda deberá:
 		
